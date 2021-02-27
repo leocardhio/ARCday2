@@ -43,7 +43,7 @@ a:hover{
     text-decoration: underline;
 }
 
-a:link, a:visited {
+body > a:link, a:visited {
     color:black;
 }
 
@@ -116,7 +116,7 @@ form {
     border: 1px solid rgba(0,0,0,0);
 }
 
-.buttons button:hover{
+.buttons button:hover {
     border: 1px solid #ddd;
     cursor: pointer;
     box-shadow: #333;
@@ -126,23 +126,44 @@ footer {
     left: 0;
     bottom: 0%;
     position: absolute;
-    background-color: #f2f2f2;
+    background-color:#f2f2f2;
     right: 0%;
+    padding-bottom: 20px;
 }
 
-footer > *{
+footer > * {
     display: flex;
-    padding-left: 2vw;
 }
 
-footer > p{
+footer > p {
+    color: #70757a;
     padding-bottom: 2vw;
     margin-top: 15px;
+    margin-left: 2vw;
 }
 
-footer > div{
-    padding-bottom: 1vw;
-    margin-left: 30;
+.more {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-footer{
+    display: flex;
+}
+
+.right-footer > a {
+    margin-right: 2vw;
+    color: #70757a;
+}
+
+.right-footer > * {
+    margin-right: 2vw;
+    color: #70757a;
+}
+
+.left-footer > a {
+    margin-left: 32px;
+    color:#70757a;
 }
 
 form p {
